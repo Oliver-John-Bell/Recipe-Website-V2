@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Parallelism by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<nav class="navbar">
+			<ul class="nav-list">
+				<li><a onclick="populate();" href="#Beef">Beef</a></li>
+				<li><a onclick="populate();" href="#Chicken">Chicken</a></li>
+				<li><a onclick="populate();" href="#Desserts">Lamb</a></li>
+				<li><a onclick="populate();" href="#Lamb">Pasta and Rice</a></li>
+				<li><a onclick="populate();" href="#Misc">Vegetarian</a></li>
+				<li><a onclick="populate();" href="#Pasta and Rice">Salad</a></li>
+				<li><a onclick="populate();" href="#Salad">Misc</a></li>
+				<li><a onclick="populate();" href="#Vegetarian">Desserts</a></li>
+				<li><a></a></li>
+				<li><a onclick="populate_cart();">Cart</a></li>
+				<li><a onclick="populate_ingredient();">Ingredients</a></li>
+				<li><a></a></li>
+				<li><a onclick="addNewRecipe();">Add recipe</a></li>
+				<li><a onclick="clear_recipes();">Clear recipes</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<section id="main">
+				<!-- Items -->
+				<div class="items" id="items-1"></div>
+				<div class="items" id="items-2"></div>
+				<div class="items" id="items-3"></div>
+			</section>
+			<div class="modal" id="cartModal">
+				<div class="cart-container">
+					<div class="cart-list" id="cartList1"></div>
+					<div class="cart-list" id="cartList2"></div>
+					<button class="add-recipe" onclick="closeCart()" id="closeButtonCart" style="position: relative; top: 10px;">X</button>
+				</div>
+			</div>
+			<div class="modal" id="ingredientModal">
+				<div class="cart-container">
+					<div class="cart-list" id="ingredientList"></div>
+					<button class="add-recipe" onclick="closeIngredient()" id="closeButtonIngredient" style="position: relative; top: 1px;">X</button>
+				</div>
+			</div>
+			<!-- Footer -->
+			<section id="footer" />
+		</div>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/recipe_details.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
